@@ -1,0 +1,21 @@
+.header {
+  background-color: rgb(83, 68, 99);
+}
+
+.nav-pills .nav-link {
+  color: white;
+}
+
+.nav-pills .nav-link:hover {
+  color: antiquewhite;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: white;
+  background-color: rgb(79, 103, 128);
+}
+
+.fs-4 {
+  color: white;
+}

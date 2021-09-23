@@ -1,0 +1,65 @@
+<app-form-filter></app-form-filter>
+
+<div class="search-items">
+  <div class="row">
+    <div class="col-md-4" *ngFor="let archive of archives">
+      <!--If URL given-->
+      <div class="card" *ngIf="archive.url != ''">
+        <!--<a [routerLink]="['/archives', archive.id]">-->
+        <a href="{{ archive.url }}" target="_blank">
+          <div class="card-id">
+            <h4 class="card-header">{{ archive.title }}</h4>
+            <div class="card-body">
+              <div class="card-description">
+                <div>{{ archive.description }}</div>
+              </div>
+              <div class="card-created">
+                <div>Created By: {{ archive.creator }}</div>
+                <div>Created: {{ archive.createdOn }}</div>
+              </div>
+            </div>
+
+            <div class="card-footer text-muted">
+              <div class="row">
+                <div class="col-sm-4 card-category">
+                  <div>{{ archive.category }}</div>
+                </div>
+                <div class="col-sm-8 card-location">
+                  <div>Location: {{ archive.location }}</div>
+                  <div style="color: blue">Click to View</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!--If no URL given-->
+      <div class="card" *ngIf="archive.url == ''">
+        <div class="card-id">
+          <h4 class="card-header">{{ archive.title }}</h4>
+          <div class="card-body">
+            <div class="card-description">
+              <div>{{ archive.description }}</div>
+            </div>
+            <div class="card-created">
+              <div>Created By: {{ archive.creator }}</div>
+              <div>Created: {{ archive.createdOn }}</div>
+            </div>
+          </div>
+          <div class="card-footer text-muted">
+            <div class="row">
+              <div class="col-sm-4 card-category">
+                <div>{{ archive.category }}</div>
+              </div>
+              <div class="col-sm-8 card-location">
+                <div>Location: {{ archive.location }}</div>
+                <div>Storage: {{ archive.storage }}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
