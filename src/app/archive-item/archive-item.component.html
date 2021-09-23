@@ -1,0 +1,32 @@
+<div class="container archive-item">
+  <!--Back button container-->
+  <div class="container backBtn">
+    <button class="btn btn-primary" [routerLink]="''">Back</button>
+  </div>
+
+  <!--Main detail container-->
+  <div class="container detail-box">
+    <div *ngIf="archive">
+      <div class="row">
+        <div class="titleBar">
+          <div>{{ archive.title }}</div>
+        </div>
+      </div>
+
+      <div class="row descriptionBox">{{ archive.description }}</div>
+     
+      <div class="row">
+        <div class="col-md-8"></div>
+      <div class="col-md-4 locationBox">
+        <div>{{ archive.location }}</div>
+        <div>{{archive.storage}}</div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Button container if needed-->
+  <div class="container btnContainer">
+    <button class="btn btn-primary">View Document</button>
+  </div>
+</div>

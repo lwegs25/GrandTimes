@@ -1,0 +1,58 @@
+.search-items {
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 20px;
+}
+.card {
+  width: 20rem;
+
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.card-header {
+  background-color: rgb(83, 68, 99);
+  color: white;
+}
+.card-description {
+  font-size: 0.9em;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  padding: 5px;
+}
+
+.card-location {
+  text-align: right;
+  text-overflow: ellipsis;
+  font-size: 0.75em;
+}
+
+.card-created {
+  text-align: center;
+  text-overflow: ellipsis;
+  font-size: 0.75em;
+  padding: 5px;
+}
+
+.card-category {
+  text-align: left;
+  text-overflow: ellipsis;
+  font-size: 0.75em;
+}
+
+a:link,
+a:visited {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover,
+a:active {
+  border-color: rgb(79, 103, 128);
+  border-style: solid;
+  border-width: 1px;
+
+  box-shadow: 5px 5px 10px rgb(79, 103, 128);
+}

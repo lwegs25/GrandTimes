@@ -1,0 +1,38 @@
+<div class="container header" id="header">
+  <header
+    class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+  >
+    <a
+      href="/"
+      class="
+        d-flex
+        align-items-center
+        mb-3 mb-md-0
+        me-md-auto
+        text-dark text-decoration-none
+      "
+    >
+      <svg class="bi me-2" width="40" height="32">
+        <use xlink:href="#bootstrap" />
+      </svg>
+      <span class="fs-4">Grand Times Archive</span>
+    </a>
+
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a href="/" class="nav-link" aria-current="page" id="home">Home</a>
+      </li>
+      <!--
+      <li class="nav-item">
+        <a href="/search" class="nav-link" id="search">Search</a>
+      </li>
+      <li class="nav-item">
+        <a href="/faq" class="nav-link" id="faq">FAQs</a>
+      </li>
+      -->
+      <li class="nav-item">
+        <a [routerLink]="['/about']" class="nav-link" id="about">About</a>
+      </li>
+    </ul>
+  </header>
+</div>
